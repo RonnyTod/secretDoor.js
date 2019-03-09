@@ -1,0 +1,59 @@
+html, body {
+	height: 100vh;
+	width: 100wh;
+	background: #1d1e22;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+	height: 100%;
+	width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	perspective: 1500px;
+	transform-style: preserve-3d;
+}
+
+.doorway {
+	background: url(https://images-na.ssl-images-amazon.com/images/I/61LtCvKcCNL._UY395_.jpg);
+	background-size: cover;
+  background-position: center;
+	width: 12.5em;
+	height: 20em;
+	margin: auto;
+	transform-style: preserve-3d;
+	transform-origin: right center;
+	transform: rotateY(25deg);
+  transition: 1s;
+}
+
+.door {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background: #d4d4dc;
+	transition: 1s;
+	transform-origin: right center;
+}
+
+.doorOpen {
+	transition: 5s;
+	transform: rotateY(90deg);
+}
+
+.future {
+	background: url(https://i.pinimg.com/originals/cf/25/b4/cf25b45e793e619342b39516ee3bd8ff.gif);
+	background-size: cover;
+  background-position: center;
+	transition: 30s;
+	transform: translateZ(1000px);
+}
+
+.handler {
+	margin: auto 25px;
+	width: 25px;
+	height: 5px;
+	background: #1d1e22;
+}
